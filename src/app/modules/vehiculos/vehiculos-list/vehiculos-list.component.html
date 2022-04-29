@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="card card-museum p-2" >
+        <img src="https://ccaentrerios.org/wp-content/uploads/2020/06/325432-giacinti-automoviles-multimarcas-banner-1536x431.png" alt="" class="card-img-top img-museum">
+        <div class="card-body">
+          <table class="table">
+            <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Marca</th>
+              <th scope="col">Línea</th>
+              <th scope="col">Modelo</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="list-vehiculo" *ngFor="let vehiculo of vehiculos">
+              <th scope="row">{{vehiculo.id}}</th>
+              <td class="{{vehiculo.marca}}">{{vehiculo.marca}}</td>
+              <td>{{vehiculo.linea}}</td>
+              <td>{{vehiculo.modelo}}</td>
+            </tr>
+            </tbody>
+          </table>
+
+          <p class="card-text">
+            <b>Total Renault: {{renaultCount}}</b><br>
+            <b>Total Chevrolet: {{chevroletCount}}</b><br>
+            <b>Total Nissan: {{nissanCount}}</b>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
